@@ -1,0 +1,14 @@
+{
+  "name": "{domain}/{block-slug}",
+  "title": "{block-name}",
+  "description": "",
+  "style": [ "file:./dist/{block-slug}.css" ],
+  "viewScript": [ "file:./dist/{block-slug}.js"],
+  "category": "{category}",
+  "icon": "",
+  "keywords": [],
+  "acf": {
+      "mode": "auto",
+      "renderTemplate": "{block-slug}.php"
+  }
+}

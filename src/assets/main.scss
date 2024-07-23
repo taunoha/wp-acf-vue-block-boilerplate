@@ -1,0 +1,13 @@
+.{domain}-{block-slug} {
+  background-color: #eee;
+  min-height: 200px;
+
+  &.is-preview {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &[v-cloak]:not(.is-preview) {
+    visibility: hidden;
+  }
+}
