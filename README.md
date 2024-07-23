@@ -5,7 +5,8 @@ The boilerplate helps you to use Vue in your custom block with minimal setup.
 
 ## Before you start
 
-Please add a new folder to your theme folder and move the code into it. For example, `wp-conten/themes/my-theme/blocks/my-block`
+Please add a new folder to your theme folder and move the code into it.
+For example, `wp-content/themes/my-theme/blocks/my-block`
 
 To finish the setup, please follow these steps:
 
