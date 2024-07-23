@@ -5,9 +5,9 @@ The boilerplate helps you to use Vue in your custom block with minimal setup.
 
 ## Before you start
 
-Palun tekita enda theme kausta uus kaust ja tõsta kood sellesse kausta. Näiteks, `wp-conten/themes/my-theme/blocks/my-block`
+Please add a new folder to your theme folder and move the code into it. For example, `wp-conten/themes/my-theme/blocks/my-block`
 
-Edasi järgi neid samme:
+To finish the setup, please follow these steps:
 
 **Delete:**
 * .git folder
@@ -17,7 +17,7 @@ Edasi järgi neid samme:
 
 ## 👉  `npm run rename`
 * Rename placeholder strings in files
-* Copy or merge the content from the `example-functions.php` to your theme's `functions.php` file. You can delete the `example-functions.php`.
+* Copy or merge the content from the `example-functions.php` to your theme's `functions.php` file. You are free to delete the `example-functions.php` file.
 
 ## Development
 
