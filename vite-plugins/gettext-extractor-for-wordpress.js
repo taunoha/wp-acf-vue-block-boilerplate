@@ -24,7 +24,7 @@ export default function gettextExtractorForWordpress(options) {
     name: 'extractStrings',
     apply: 'build',
     buildStart() {
-      var php = ['<?php', '', "defined('ABSPATH') or die();", '', 'return array('];
+      var php = ['<?php', '', '// ! This file is auto-generated ', '', "defined('ABSPATH') or die();", '', 'return array('];
       var messages = [];
 
       if (this.meta.watchMode) {
