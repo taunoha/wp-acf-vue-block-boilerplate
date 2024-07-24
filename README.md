@@ -3,14 +3,18 @@
 This is a PHP-based [ACF Block](https://www.advancedcustomfields.com/resources/blocks/) that incorporates Vue.
 The boilerplate helps you to use Vue in your custom block with minimal setup.
 
+The block uses the new [Interactive API](https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/api-reference/#server-functions) introduced in WordPress 6.5.
+The solution depends on the `wp_interactivity_config` server function to set initial values and/or configuration.
+
 ## Before you start
 
 Please add a new folder to your theme folder and move the code into it.
-For example, `wp-content/themes/my-theme/blocks/my-block`
 
-To finish the setup, please follow these steps:
+For example: `wp-content/themes/my-theme/blocks/my-block`
 
-**Delete:**
+To finish the setup, go to the newly created folder and follow these steps:
+
+**Remove:**
 * .git folder
 
 ## 👉  `npm install`

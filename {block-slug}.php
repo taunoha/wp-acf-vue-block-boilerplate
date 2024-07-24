@@ -18,6 +18,7 @@ if ($is_preview) {
 
 wp_interactivity_config('{domain}/{block-slug}', array(
   'translations' => require(__DIR__ . '/languages/messages.php'),
+  'locale' => 'en',
 ));
 
 ?>
