@@ -47,12 +47,12 @@ It uses Vue's [`onErrorCaptured`](https://vuejs.org/api/composition-api-lifecycl
 <script setup>
 import ErrorBoundary from "@/components/ErrorBoundary.vue";
 
-function handleError(err) {
+function handleErrorLog(err) {
   console.log(err);
 }
 </script>
 <template>
-  <ErrorBoundary @error="handleError">
+  <ErrorBoundary @error="handleErrorLog">
     <-- --- -->
     <template #error="{ error, clearError }">
       <p>{{ error }}</p>
