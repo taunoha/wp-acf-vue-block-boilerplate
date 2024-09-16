@@ -38,7 +38,7 @@ To finish the setup, go to the newly created folder and follow these steps:
 - Builds production code inside `dist` folder.
 - Will extract translatable strings from your code and generate the `languages/messages.php` file.
 
-## ErrorBoundary component
+## &lt;ErrorBoundary&gt; component
 
 This component handles errors happening in its default slot. It will prevent the error from bubbling up to the top level, and will render the #error slot instead.
 It uses Vue's [`onErrorCaptured`](https://vuejs.org/api/composition-api-lifecycle.html#onerrorcaptured) hook under the hood.
