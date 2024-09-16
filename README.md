@@ -53,7 +53,7 @@ function handleErrorLog(err) {
 </script>
 <template>
   <ErrorBoundary @error="handleErrorLog">
-    <-- --- -->
+    <!-- --- -->
     <template #error="{ error, clearError }">
       <p>{{ error }}</p>
       <button @click="clearError">Try Again</button>
