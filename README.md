@@ -1,4 +1,4 @@
-# Vue with ACF Block in Wordpress
+# Vue with ACF Block in WordPress
 
 This is a PHP-based [ACF Block](https://www.advancedcustomfields.com/resources/blocks/) boilerplate that incorporates [Vuejs](https://vuejs.org).
 The boilerplate helps you to use Vuejs in your custom block with minimal setup.
