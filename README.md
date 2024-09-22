@@ -1,9 +1,9 @@
-# ACF Block with Vuejs
+# Vue with ACF Block in Wordpress
 
-This is a PHP-based [ACF Block](https://www.advancedcustomfields.com/resources/blocks/) that incorporates [Vuejs](https://vuejs.org).
+This is a PHP-based [ACF Block](https://www.advancedcustomfields.com/resources/blocks/) boilerplate that incorporates [Vuejs](https://vuejs.org).
 The boilerplate helps you to use Vuejs in your custom block with minimal setup.
 
-The block uses the new [Interactive API](https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/api-reference/#server-functions) introduced in WordPress 6.5.
+The block makes use of the new [Interactive API](https://developer.wordpress.org/block-editor/reference-guides/interactivity-api/api-reference/#server-functions) introduced in WordPress 6.5.
 The solution depends on the `wp_interactivity_config` server function to set initial values and/or configuration.
 
 ## Before you start
