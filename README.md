@@ -11,7 +11,7 @@ The solution depends on the `wp_interactivity_config` server function to set ini
 > [!NOTE]
 > Prerequisites
 > * Familiarity with the command line
-> * Install Node.js version 20.0 (LTS) or higher LTS
+> * Install [Node.js](https://nodejs.org/en) version 20.0 (LTS) or higher LTS
 
 Please add a new folder to your theme folder and move the code into it.
 
