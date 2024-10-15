@@ -8,6 +8,11 @@ The solution depends on the `wp_interactivity_config` server function to set ini
 
 ## Before you start
 
+> [!NOTE]
+> Prerequisites
+> * Familiarity with the command line
+> * Install Node.js version 20.0 (LTS) or higher LTS
+
 Please add a new folder to your theme folder and move the code into it.
 
 For example: `wp-content/themes/my-theme/blocks/my-block`
