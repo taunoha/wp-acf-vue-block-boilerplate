@@ -1,6 +1,4 @@
 <script setup>
-import { ref, onErrorCaptured, useSlots } from "vue";
-
 defineOptions({
   inheritAttrs: false,
 });

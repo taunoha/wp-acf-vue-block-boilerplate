@@ -22,26 +22,32 @@ To finish the setup, go to the newly created folder and follow these steps:
 **Remove:**
 * .git folder
 
-## 👉  `npm install`
+### 👉  `npm install`
 * Install the dependencies in the local node_modules folder.
 
-## 👉  `npm run rename`
+### 👉  `npm run rename`
 * Rename placeholder strings in files
 * Copy or merge the content from the `example-functions.php` to your theme's `functions.php` file. You are free to delete the `example-functions.php` file.
 
 ## Development
 
-## 👉  `npm run dev`
+### 👉  `npm run dev`
 * Use to compile and run the code in development mode.
 * Watches for any changes and reports back any errors in your code.
   
-## 👉  `npm run lint`
+### 👉  `npm run lint`
 * Check your source code for programmatic and stylistic errors. 
 * Format your source code
 
-## 👉  `npm run build`
+### 👉  `npm run build`
 - Builds production code inside `dist` folder.
 - Will extract translatable strings from your code and generate the `languages/messages.php` file.
+
+## 🌶️ Auto-imports
+
+I have set up auto-imports for components, composables, Vue.js APIs, and your utilities inside the ``utils`` folder. You can use these in your application without explicitly importing them.
+
+Contrary to a classic global declaration, it will preserve typings, IDEs completions and hints, and only includes what is used in your code.
 
 ## &lt;ErrorBoundary&gt; component
 
@@ -50,8 +56,6 @@ It uses Vue's [`onErrorCaptured`](https://vuejs.org/api/composition-api-lifecycl
 
 ```html
 <script setup>
-import ErrorBoundary from "@/components/ErrorBoundary.vue";
-
 function handleErrorLog(err) {
   console.log(err);
 }
@@ -73,7 +77,6 @@ Use the `__("Translatable string")` function in your SFC files to make strings t
 
 ```html
 <script setup>
-import { __, _x, _n, _nx } from "@/utils/i18n";
 const message = __("This is a message from i18n!");
 </script>
 

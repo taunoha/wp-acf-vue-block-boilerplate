@@ -1,8 +1,10 @@
 import { fileURLToPath, URL } from 'url';
 import path from 'path';
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import vue from '@vitejs/plugin-vue';
 import gettextExtractorForWordpress from './vite-plugins/gettext-extractor-for-wordpress.js'
 
 const filename = '{block-slug}';
@@ -13,7 +15,16 @@ export default defineConfig({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
   },
   plugins: [
-    vue(), 
+    vue(),
+    AutoImport({
+      imports: ['vue'],
+      dirs: [
+        './src/utils/**',
+        './src/composables/**',
+      ],
+      vueTemplate: true,
+    }),
+    Components(),
     gettextExtractorForWordpress({
       path: path.resolve(__dirname, 'languages/'),
       domain: '{block-text-domain}'
@@ -38,7 +49,7 @@ export default defineConfig({
       output: {
         extend: true,
         assetFileNames: (assetInfo) => {
-          if( assetInfo.name == 'style.css') {
+          if (assetInfo.name == 'style.css') {
             return `${filename}.css`;
           }
           return assetInfo.name;
