@@ -17,14 +17,17 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      imports: ['vue'],
+      imports: ['vue','@vueuse/core'],
       dirs: [
         './src/utils/**',
         './src/composables/**',
       ],
       vueTemplate: true,
     }),
-    Components(),
+    Components({
+      deep: true,
+      directoryAsNamespace: true,
+    }),
     gettextExtractorForWordpress({
       path: path.resolve(__dirname, 'languages/'),
       domain: '{block-text-domain}'
