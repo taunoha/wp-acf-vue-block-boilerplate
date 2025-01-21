@@ -42,7 +42,7 @@ To finish the setup, go to the newly created folder and follow these steps:
 ### 👉  `npm run build`
 - Builds production code inside `dist` folder.
 - Will extract translatable strings from your code and generate the `languages/messages.php` file.
-- 
+
 ## ❗️ Deploy
 
 The `dist` folder will be overridden each time you run `npm run build` or `npm run dev`. Do not commit this folder to version control. If you use any CI/CD pipeline, make sure to trigger the build process as part of your deployment workflow.
