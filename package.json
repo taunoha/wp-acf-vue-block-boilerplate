@@ -9,23 +9,23 @@
   },
   "type": "module",
   "dependencies": {
-    "@vueuse/core": "^11.1.0",
-    "@wordpress/i18n": "^5.10.0",
-    "@wordpress/interactivity": "^6.10.0",
-    "vue": "^3.5.12"
+    "@vueuse/core": "^11.3.0",
+    "@wordpress/i18n": "^5.16.0",
+    "@wordpress/interactivity": "^6.16.0",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.10.0",
-    "@vitejs/plugin-vue": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@vitejs/plugin-vue": "^5.2.1",
     "@vue/eslint-config-prettier": "^9.0.0",
     "eslint": "^8.57.1",
-    "eslint-plugin-vue": "^9.29.0",
+    "eslint-plugin-vue": "^9.32.0",
     "gettext-extractor": "^3.8.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "prompts": "^2.4.2",
-    "sass": "^1.80.3",
-    "unplugin-auto-import": "^0.18.3",
-    "unplugin-vue-components": "^0.27.4",
-    "vite": "^5.4.9"
+    "sass": "^1.83.4",
+    "unplugin-auto-import": "^0.18.6",
+    "unplugin-vue-components": "^0.27.5",
+    "vite": "^5.4.14"
   }
 }
