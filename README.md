@@ -42,12 +42,37 @@ To finish the setup, go to the newly created folder and follow these steps:
 ### 👉  `npm run build`
 - Builds production code inside `dist` folder.
 - Will extract translatable strings from your code and generate the `languages/messages.php` file.
+- 
+## ❗️ Deploy
+
+The `dist` folder will be overridden each time you run `npm run build` or `npm run dev`. Do not commit this folder to version control. If you use any CI/CD pipeline, make sure to trigger the build process as part of your deployment workflow.
 
 ## 🌶️ Auto-imports
 
-I have set up auto-imports for components, composables, Vue.js APIs, and your utilities inside the ``utils`` folder. You can use these in your application without explicitly importing them.
+I have set up auto-imports for components, composables, Vue.js APIs, and your utilities inside the ``utils`` folder. This includes:
 
-Contrary to a classic global declaration, it will preserve typings, IDEs completions and hints, and only includes what is used in your code.
+- All components in your ``components`` folder
+- All composables in your ``composables`` folder
+- All utilities in your ``utils`` folder 
+- Core Vue.js APIs (ref, computed, watch, etc.)
+- VueUse composables (useStorage, useMouse, useWindowSize, etc.)
+
+You can use these in your application without explicitly importing them. For example:
+
+```
+components
+├─ Icon
+│  └─ Arrow.vue
+└─ ErrorBoundary.vue
+```
+
+You can use these components in your templates as:
+```html
+<ErrorBoundary />
+<IconArrow />
+```
+
+Contrary to a classic global declaration, it will preserve typings, IDE completions, and hints and only include what is used in your code.
 
 ## &lt;ErrorBoundary&gt; component
 
