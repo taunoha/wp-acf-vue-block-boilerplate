@@ -73,7 +73,7 @@ function handleErrorLog(err) {
 
 ## i18n
 
-Use the `__("Translatable string")` function in your SFC files to make strings translatable.
+To make strings translatable, use the `__("Translatable string")` function in your SFC files.
 
 ```html
 <script setup>
@@ -81,10 +81,21 @@ const message = __("This is a message from i18n!");
 </script>
 
 <template>
-  <h1>{{ __("Hello, World!") }}</h1>
-  <p>{{ message }}</p>
-  <p>{{ _n("%d person", "%d people", 2) }}</p>
-  <p>{{ _nx("%d person", "%d people", 2, "different context") }}</p>
-  <p>{{ _x("This is a message from i18n!", "different context") }}</p>
+  <article>
+    <h1>{{ __("Hello, World!") }}</h1>
+    <p>{{ message }}</p>
+    <p>{{ _n("%d person", "%d people", 2) }}</p>
+    <p>{{ _nx("%d person", "%d people", 2, "different context") }}</p>
+    <p>{{ _x("This is a message from i18n!", "different context") }}</p>
+  </article>
 </template>
 ```
+
+### Translation Plugin Compatibility
+
+This plugin is compatible with popular WordPress translation plugins like WPML, Polylang, or TranslatePress. The translation functions (`__()`, `_n()`, `_x()`, etc.) integrate with WordPress's translation ecosystem, allowing you to:
+
+- Extract translatable strings using the plugins' string scanning features
+- Manage translations through the plugins' translation interfaces
+- Use the plugins' language switching functionality
+- Maintain translations across different language versions of your site
